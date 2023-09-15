@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  <title>LinkedIn: Log In or Sign Up</title>
+  <link rel="stylesheet" href="style.css">
+  <link
+    favicon="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIjFSSi5YiIis-aVNGLIcmXSnPaEASjXP2jMVbx__5cOuaKBzrg2EvdWGbMCS0aYWgX58&usqp=CAU">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body class="m-2">
+  <nav class="navbar
+                navbar-expand-lg navbar-light ">
+    <div class="container">
+      <a href="#"><img class="nav-img" src='navlogo.png' alt="" width="30" height="30"></a>
+      <div class=" nav-alignment" id="navbarSupportedContent ">
+        <ul class="navbar-nav  mb-lg-0">
+
+          <li class="nav-item">
+            <svg xmlns="http://www.w3.org/2000/svg" height="1em"
+              viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+              <path
+                d="M168 80c-13.3 0-24 10.7-24 24V408c0 8.4-1.4 16.5-4.1 24H440c13.3 0 24-10.7 24-24V104c0-13.3-10.7-24-24-24H168zM72 480c-39.8 0-72-32.2-72-72V112C0 98.7 10.7 88 24 88s24 10.7 24 24V408c0 13.3 10.7 24 24 24s24-10.7 24-24V104c0-39.8 32.2-72 72-72H440c39.8 0 72 32.2 72 72V408c0 39.8-32.2 72-72 72H72zM176 136c0-13.3 10.7-24 24-24h96c13.3 0 24 10.7 24 24v80c0 13.3-10.7 24-24 24H200c-13.3 0-24-10.7-24-24V136zm200-24h32c13.3 0 24 10.7 24 24s-10.7 24-24 24H376c-13.3 0-24-10.7-24-24s10.7-24 24-24zm0 80h32c13.3 0 24 10.7 24 24s-10.7 24-24 24H376c-13.3 0-24-10.7-24-24s10.7-24 24-24zM200 272H408c13.3 0 24 10.7 24 24s-10.7 24-24 24H200c-13.3 0-24-10.7-24-24s10.7-24 24-24zm0 80H408c13.3 0 24 10.7 24 24s-10.7 24-24 24H200c-13.3 0-24-10.7-24-24s10.7-24 24-24z" />
+            </svg>
+            <a class="nav-link active" aria-current="page" href="#">Articles</a>
+          </li>
+          <li class="nav-item">
+            <svg xmlns="http://www.w3.org/2000/svg" height="1em"
+              viewBox="0 0 320 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+              <path
+                d="M112 48a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm40 304V480c0 17.7-14.3 32-32 32s-32-14.3-32-32V256.9L59.4 304.5c-9.1 15.1-28.8 20-43.9 10.9s-20-28.8-10.9-43.9l58.3-97c17.4-28.9 48.6-46.6 82.3-46.6h29.7c33.7 0 64.9 17.7 82.3 46.6l58.3 97c9.1 15.1 4.2 34.8-10.9 43.9s-34.8 4.2-43.9-10.9L232 256.9V480c0 17.7-14.3 32-32 32s-32-14.3-32-32V352H152z" />
+            </svg>
+            <a class="nav-link active" aria-current="page" href="#">People</a>
+          </li>
+          <li class="nav-item">
+            <svg xmlns="http://www.w3.org/2000/svg" height="1em"
+              viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+              <path
+                d="M464 256A208 208 0 1 0 48 256a208 208 0 1 0 416 0zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zM188.3 147.1c7.6-4.2 16.8-4.1 24.3 .5l144 88c7.1 4.4 11.5 12.1 11.5 20.5s-4.4 16.1-11.5 20.5l-144 88c-7.4 4.5-16.7 4.7-24.3 .5s-12.3-12.2-12.3-20.9V168c0-8.7 4.7-16.7 12.3-20.9z" />
+            </svg>
+            <a class="nav-link active" aria-current="page" href="#">Learning</a>
+          </li>
+          <li class="nav-item">
+            <svg xmlns="http://www.w3.org/2000/svg" height="1em"
+              viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+              <path
+                d="M160 112c0-35.3 28.7-64 64-64s64 28.7 64 64v48H160V112zm-48 48H48c-26.5 0-48 21.5-48 48V416c0 53 43 96 96 96H352c53 0 96-43 96-96V208c0-26.5-21.5-48-48-48H336V112C336 50.1 285.9 0 224 0S112 50.1 112 112v48zm24 48a24 24 0 1 1 0 48 24 24 0 1 1 0-48zm152 24a24 24 0 1 1 48 0 24 24 0 1 1 -48 0z" />
+            </svg>
+            <a class="nav-link active" aria-current="page" href="#">Jobs</a>
+          </li>
+          <li class="nav-item">
+            <button class="join-btn">Join now</button>
+          </li>
+          <div class="vl"></div>
+
+          <li class="nav-item">
+            <button class="sign-btn">Sign in</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="sec1">
+    <div class="first-div">
+      <h1 class="heading1">
+        Find jobs through your community </h1>
+      <form action="/action_page.php">
+        <label>Email or phone</label><br>
+        <input class="input_width" type="email"><br><br>
+        <label>Password</label><br>
+        <input class="input_width" type="password" id="lname" name="lname"><br>
+        <p class="para1 underline-on-hover">Forgot password?</p>
+        <div>
+          <input class="sign2-btn" type="submit" value="Sign in"><br>
+          <div class="login-option">
+            <span class="divider"></span>
+            <p class="divider-para">or</p>
+            <span class="divider"></span>
+          </div>
+          <div>
+            <p class="nano-para">
+              By clicking Continue, you agree to LinkedIn’s<span class="blue-font"> User Agreement </span>,<span
+                class="blue-font"> Privacy Policy</span>, and <span class="blue-font">Cookie Policy.</span>
+            </p>
+          </div>
+
+          <button class="cont-btn image-button">
+            <img
+              src="data:image/png;base64,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"
+              alt="Image Alt Text">
+            <span>Continue with Google</span>
+          </button><br>
+          <input class="newjoin-btn" type="submit" value="New to LinkedIn? Join now"><br>
+
+        </div>
+      </form>
+    </div>
+    <div class="second-div">
+      <img class="img1" src="img1.png" alt="">
+    </div>
+  </div>
+
+  <div class="sec2">
+    <div class="first-div2">
+      <h1 class="heading2">
+        Explore collaborative articles </h1>
+      <p class="para-sec2">
+        We’re unlocking community knowledge in a new way. Experts add insights directly into each article, started with
+        the help of AI.
+      </p>
+
+    </div>
+    <div class="sec-div2">
+      <div>
+        <input class="explore1" type="submit" value="Marketing">
+        <input class="explore2" type="submit" value="Public Administration">
+        <input class="explore1" type="submit" value="Healthcare">
+        <input class="explore1" type="submit" value="Engineering">
+
+        <input class="explore2" type="submit" value="Talent Management">
+        <input class="explore1" type="submit" value="IT Services">
+        <input class="explore2" type="submit" value="Business Administration">
+        <br>
+        <input class="explore2" type="submit" value="Telecommunications">
+        <input class="explore3" type="submit" value="Search Engine Optimization (SEO)">
+        <input class="showall_btn" type="submit" value="Show all">
+      </div>
+
+    </div>
+  </div>
+
+  <div class="sec3">
+    <div class="first-div3">
+      <h1 class="heading3">
+        Find the right job or internship for you </h1>
+
+
+    </div>
+    <div class="sec-div3">
+      <div>
+        <h5>SUGGESTED SEARCHES</h5>
+
+
+        <input class="explore1a" type="submit" value="Engineering">
+        <input class="explore2a" type="submit" value="Business Development">
+        <input class="explore1a" type="submit" value="Finance">
+        <br>
+
+        <input class="explore3a" type="submit" value="Administrative Assistant">
+        <input class="explore2a" type="submit" value="Retail Associate">
+        <input class="explore2a" type="submit" value="Customer Service">
+        <br>
+
+        <input class="explore1a" type="submit" value="Operations">
+        <input class="explore3a" type="submit" value="Information Technology">
+        <input class="explore1a" type="submit" value="Marketing">
+        <br>
+        <input class="explore2a" type="submit" value="Human Resources">
+        <br>
+
+        <button class="special-type">Show more <span class="arrow">&#9660;</span></button>
+
+
+      </div>
+
+    </div>
+  </div>
+
+  <div class="sec4">
+    <div class="first-div4">
+      <h1 class="heading4">
+        Post your job for millions of people to see </h1>
+
+
+    </div>
+    <div class="sec-div4">
+      <div class="first-div4">
+
+        <button class="showall_btn">Post a job </button>
+
+
+      </div>
+
+    </div>
+  </div>
+  <div class="main1">
+    <div class="child1">
+      <img class="IMG1" src="iamge1.png"><br>
+      <h1 class="heaidng-wedding1">Connect with people who can help</h1>
+      <input class="btn-1" type="submit" value="Find people you know">
+
+    </div>
+
+    <div class="child2">
+      <img class="IMG2" src="image2.png">
+
+      <h1 class="heaidng-wedding2">Learn the skills you need to succeed</h1>
+      <form action=#>
+        <select class="dropdown">
+          <option value="value">Choose a topic to learn about
+          </option>
+          <option value="value1">option1 </option>
+          <option value="value2">option2</option>
+          <option value="value3">option3</option>
+        </select>
+      </form>
+
+    </div>
+  </div>
+
+  <div class="main2">
+
+    <div class="child3">
+      <h1 class="child3-heading1">Who is LinkedIn for?</h1>
+      <h2 class="child3-heading2">Anyone looking to navigate their professional life.</h2>
+
+      <div>
+        <p class="box-para">
+          Find a coworker or classmate <span class="bold1">></span>
+        </p>
+        </p>
+        <p class="box-para">
+          Find a new job <span class="bold2">></span>
+        </p>
+        <p class="box-para">
+          Find a course or training <span class="bold3">></span>
+        </p>
+        </p>
+      </div>
+
+    </div>
+
+    <div class="child4">
+      <img class="image4a" src="image4a.png">
+    </div>
+  </div>
+  <div>
+    <img class="cover-image" src="cover-image.png" alt="" srcset="">
+  </div>
+  <div class="footer">
+    <img class="footer-image" src="linkden.png">
+    <div>
+      <h5 class="h5-hai">
+        General
+      </h5>
+      <ul>
+        <li class='font-size'>
+          Sign Up
+        </li>
+        <li class='font-size'>
+          Help Center
+        </li>
+        <li class='font-size'>
+          About
+        </li>
+        <li class='font-size'>
+          Press
+        </li>
+        <li class='font-size'>
+          Blog
+        </li>
+        <li class='font-size'>
+          Careers
+        </li>
+        <li class='font-size'>
+          Developers
+        </li>
+      </ul>
+    </div>
+    <div>
+      <h5 class="h5-hai">
+        Browse LinkedIn
+      </h5>
+      <ul>
+        <li class='font-size'>
+          Learning
+        </li>
+        <li class='font-size'>
+          Jobs
+        </li>
+        <li class='font-size'>
+          Salary
+        </li>
+        <li class='font-size'>
+          Mobile
+        </li>
+        <li class='font-size'>
+          Services
+        </li>
+        <li class='font-size'>
+          Products
+        </li>
+
+      </ul>
+    </div>
+    <div>
+      <h5 class="h5-hai">
+        Business Solutions
+      </h5>
+      <ul>
+        <li class='font-size'>
+          Talent
+        </li>
+        <li class='font-size'>
+          Marketing
+        </li>
+        <li class='font-size'>
+          Sales
+        </li>
+        <li class='font-size'>
+          Learning
+        </li>
+
+      </ul>
+    </div>
+    <div>
+      <h5 class="h5-hai">
+        Directories
+      </h5>
+      <ul>
+        <li class='font-size'>
+          Members
+        </li>
+        <li class='font-size'>
+          Jobs
+        </li>
+        <li class='font-size'>
+          Companies
+        </li>
+        <li class='font-size'>
+          Featured
+        </li>
+        <li class='font-size'>
+          Learning
+        </li>
+        <li class='font-size'>
+          Posts
+        </li>
+        <li class='font-size'>
+          Articles
+        </li>
+        <li class='font-size'>
+          Schools
+        </li>
+        <li class='font-size'>
+          News
+        </li>
+        <li class='font-size'>
+          News Letters
+        </li>
+        <li class='font-size'>
+          Services
+        </li>
+        <li class='font-size'>
+          Products
+        </li>
+        <li class='font-size'>
+          Advice
+        </li>
+        <li class='font-size'>
+          People Search
+        </li>
+      </ul>
+    </div>
+
+  </div>
+  <div>
+    <ul class="horizontal-list">
+      <li><img class="footer-img2" src="footer-image.png">
+      </li>
+      <li class="horizontal-list">
+        Accessibility
+      </li>
+      <li class="horizontal-list">
+        User Agreement
+      </li>
+      <li class="horizontal-list">
+        Privacy Policy
+      </li>
+      <li class="horizontal-list">
+        Cookie Policy
+      </li>
+      <li class="horizontal-list">
+        Copyright Policy
+      </li>
+      <li class="horizontal-list">
+        Brand Policy
+      </li>
+      <li class="horizontal-list">
+        Guest Controls
+      </li>
+      <li class="horizontal-list">
+        Community Guidelines
+      </li>
+      <li class="horizontal-list">
+        Langauge <span class="rotation"> > </span>
+      </li>
+    </ul>
+  </div>
+</body>
+
+</html>
